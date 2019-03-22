@@ -131,7 +131,7 @@ a{
     .menu > ul > li {
     font-size: 30px;
     float: none;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
     
     }
@@ -173,6 +173,7 @@ a{
     display: inline-block;
     position: absolute;
     right: 0;
+    padding: 0 20px;
     }
     .menu{
         position: fixed;
@@ -194,7 +195,7 @@ a{
         visibility: visible;
     }
     .popup-menu-close{
-        top: 0px;
+        top: 10px;
         right: 30px;
         font-size: 30px;
         display: block;
@@ -206,8 +207,8 @@ a{
 
 
 .product_menu{
-    top: 40px;
-    left: 60px;
+    top: 0px;
+    left: 70px;
     display: none;
     background-color: #fff;
     z-index: 1000;
