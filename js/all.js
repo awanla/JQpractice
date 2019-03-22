@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.click_menu').click(function (e) { 
         e.preventDefault();
+        $('.click_menu').toggleClass('active');
         $('.product_menu').slideToggle(1000);
     });
     var mySwiper = new Swiper('.swiper-container', {
@@ -26,11 +27,6 @@ $(document).ready(function () {
         }, 700);
     });
 
-    $('body').scroll(function () { 
-        if ($('body').scrollTop() > 0)
-            $('.top-icon').hide();
-        else
-            $('.top-icon').hide();
-});
+    
     });
     

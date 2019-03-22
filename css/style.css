@@ -85,6 +85,7 @@ a{
 .nav_logo{
     height: 60px;
     width: 100%;
+    position: relative;
     /* border: 2px solid red; */
 }
 
@@ -110,12 +111,14 @@ a{
     padding: 20px 10px;
     float: right;
     clear: right;
-    z-index: 5;
+    
 }
+
 
 .menu > ul > li {
     float: left;
     padding: 0px 10px;
+    position: static;
 }
 
 
@@ -153,9 +156,13 @@ a{
     transition: all 0.5s;
 }
 
-.menu > ul > li:hover > a:after{
+.menu > ul > li:hover > a:after {
     width: 100%;
 }
+.menu > ul > li > a.active:after {
+    width: 100%;
+}
+
 .menu-toggle,.popup-menu-close{
     display: none;
 }
@@ -197,19 +204,20 @@ a{
     }
 }
 
+
 .product_menu{
-    
-    right: 50%;
-    transform: translateX(50%);
-    top: 10px; 
+    top: 40px;
+    left: 60px;
     display: none;
+    background-color: #fff;
     z-index: 1000;
+    position: absolute;
+   
 }
 .product_menu > li {
    /* margin: 20px 0px; */
    border: 1px solid  #04aa81;
-   padding: 10px 10px;
-   
+   padding: 5px;
    
 }
 .product_menu > li:hover{
@@ -222,6 +230,8 @@ a{
 .product_menu > li > a{
     color: #04aa81;
     text-decoration: none;
+    display: block;
+    padding: 0 30px;
 }
 
 /* $banner */
