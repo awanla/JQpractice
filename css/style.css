@@ -135,10 +135,7 @@ a{
     text-align: center;
     
     }
-    .menu > ul > li > a{
-        /* border: #009872 2px solid; */
-        
-    }
+   
 }
 /* .menu > ul > li > a:hover{
     color: #fff;
@@ -215,6 +212,11 @@ a{
     position: absolute;
    
 }
+@media (max-width:768px){
+    .product_menu{
+        position: inherit;
+    }
+}
 .product_menu > li {
    /* margin: 20px 0px; */
    border: 1px solid  #04aa81;
@@ -252,6 +254,17 @@ a{
 .swiper-slide{
     background-size: cover;
     background-repeat: no-repeat;
+}
+@media (max-width:768px){
+    .b-text h1{
+        font-size: 25px;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
 }
 
 
