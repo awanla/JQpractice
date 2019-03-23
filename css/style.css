@@ -209,7 +209,7 @@ a{
     display: none;
     background-color: #fff;
     z-index: 1000;
-    position: absolute;
+    position: inherit;
    
 }
 @media (max-width:768px){
